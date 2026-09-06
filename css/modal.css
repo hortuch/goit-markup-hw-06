@@ -8,8 +8,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms ease,
-        visibility 250ms ease;
+    transition: opacity 250ms ease, visibility 250ms ease;
 }
 
 .backdrop.is-open {
@@ -205,10 +204,10 @@
 }
 
 /* =========================
-   TABLET
+   TABLET + DESKTOP
    ========================= */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
     .modal {
         width: 408px;
         padding: 72px 24px 24px;

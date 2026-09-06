@@ -62,14 +62,10 @@
 .container-team {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
-
     gap: 72px;
-
-    padding: 0 15px;
-
     width: 100%;
+    padding: 0 15px;
 }
 
 .members {
@@ -77,10 +73,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     gap: 72px;
-
     width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.team-soc-list {
+    list-style: none;
 }
 
 .team-pic {

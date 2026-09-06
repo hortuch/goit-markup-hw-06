@@ -44,6 +44,7 @@
 
 .footer-desc {
     margin: 0;
+    text-align: left;
     font-weight: 400;
     letter-spacing: 0.02em;
     font-size: 16px;
@@ -133,7 +134,6 @@
 
 .footer-input {
     width: 100%;
-    max-width: 398px;
     height: 40px;
     padding-left: 16px;
     box-sizing: border-box;

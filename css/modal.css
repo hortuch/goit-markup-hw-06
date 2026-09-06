@@ -252,8 +252,8 @@
 
 @media screen and (max-width: 767px) {
     .modal {
-        width: calc(100% - 32px);
-        max-width: 408px;
+        width: 288px;
+        padding: 72px 16px 24px;
     }
 }
 

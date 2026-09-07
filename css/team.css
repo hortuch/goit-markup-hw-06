@@ -1,18 +1,16 @@
 .team {
     background-color: #F4F4FD;
-    list-style: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
     padding: 96px 0;
 }
 
-.team-title {
-    margin: 0;
+.container-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.team-title {
+    margin: 0 0 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -21,106 +19,82 @@
     color: #2E2F42;
 }
 
-.team-name {
-    margin-bottom: 8px;
-
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2E2F42;
-}
-
-.team-spec {
-    margin: 0;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #434455;
+.members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+    width: 100%;
 }
 
 .card {
-    display: block;
-
-    width: 100%;
-    max-width: 264px;
-
-    border-radius: 0 0 4px 4px;
-
+    width: 264px;
     background-color: #FFFFFF;
-
+    border-radius: 0 0 4px 4px;
     box-shadow:
-        0 2px 1px 0 rgba(46, 47, 66, 0.08),
-        0 1px 1px 0 rgba(46, 47, 66, 0.16),
-        0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.container-team {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 72px;
-    width: 100%;
-    padding: 0 15px;
-}
-
-.members {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 72px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.team-soc-list {
-    list-style: none;
+        0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 0px 1px rgba(46, 47, 66, 0.08);
+    overflow: hidden;
 }
 
 .team-pic {
     display: block;
-
     width: 100%;
-    max-width: 100%;
     height: auto;
 }
 
 .team-specif {
     padding: 32px 16px;
-
     text-align: center;
+}
+
+.team-name {
+    margin: 0 0 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.team-spec {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.team-soc {
+    margin-top: 8px;
 }
 
 .team-social-list {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: row;
-
+    align-items: center;
     gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    width: 100%;
-    margin-top: 8px;
+.team-soc-list {
+    width: 40px;
+    height: 40px;
 }
 
 .team-border-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 40px;
     height: 40px;
-
-    border-radius: 50%;
-
     background-color: #4D5AE5;
-
-    transition: background-color 250ms ease-in-out;
+    border-radius: 50%;
+    transition: background-color 250ms ease;
 }
 
 .team-border-icon:hover,
@@ -129,64 +103,46 @@
 }
 
 .team-soc-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 16px;
-    height: 16px;
-
-    color: #F4F4FD;
     fill: #F4F4FD;
-
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-soc-icon:hover {
-    transform: translateY(2px);
+    color: #F4F4FD;
 }
 
 
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (min-width: 768px) {
     .team {
         padding: 96px 0;
-    }
-
-    .container-team {
-        gap: 72px;
     }
 
     .members {
         flex-direction: row;
         flex-wrap: wrap;
-
         justify-content: center;
-
         column-gap: 24px;
         row-gap: 64px;
     }
 
     .card {
-        width: 264px;
+        width: calc((100% - 24px) / 2);
+        max-width: 264px;
     }
 }
 
 
-/* Desktop */
+/* =========================
+   DESKTOP
+========================= */
+
 @media screen and (min-width: 1158px) {
     .team {
         padding: 120px 0;
     }
 
-    .container-team {
-        max-width: 1158px;
-    }
-
     .members {
-        flex-direction: row;
         flex-wrap: nowrap;
-
         gap: 24px;
     }
 

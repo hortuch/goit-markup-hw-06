@@ -62,6 +62,7 @@
 
 .portfolio-content {
   padding: 32px 16px;
+
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -97,7 +98,7 @@
 @media screen and (max-width: 767px) {
 
   .portfolio {
-    padding: 72px 0;
+    padding: 96px 0;
   }
 
   .container-portfolio {
@@ -106,7 +107,7 @@
   }
 
   .portfolio-title {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 
     font-size: 36px;
     line-height: 1.11;
@@ -149,7 +150,7 @@
 
   .portfolio-list {
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 72px;
   }
 
   .portfolio-items {

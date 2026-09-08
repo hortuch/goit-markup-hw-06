@@ -968,71 +968,112 @@
 
     </div>
 </div>
-
+```html
 <div class="backdrop" id="modal">
-    <div class="modal">
+  <div class="modal">
+
+    <button type="button" class="close-window">
+      <svg class="cross" width="8" height="8">
+        <use href="./images/icons.svg#cross"></use>
+      </svg>
+    </button>
+
+    <p class="form-title">
+      Leave your contacts and we will call you back
+    </p>
+
     <form class="form">
-        <button type="button" class="close-window">
-            <svg class="cross" width="8" height="8">
-                <use href="./images/icons.svg#cross"></use>
-            </svg>
-        </button>
-            <p class="form-title">Leave your contacts and we will call you back</p>
-    <div class="form-points">
-            <div class="label-input">
-            <label for="name" class="form-input">Name</label>
-                <input type="text" name="username" id="name" class="form-field">
-                <svg class="form-icon" width="18" height="24">
-                    <use href="./images/icons.svg#personal"></use>
-                </svg>
-            </div>
-            <div class="label-input">
-            <label for="telephone" class="form-input">Phone</label>
-                <input type="tel" name="telephone" id="telephone" class="form-field">
-                <svg class="form-icon" width="18" height="24">
-                    <use href="./images/icons.svg#tel"></use>
-                </svg>
-            </div>
-            <div class="label-input">
-                <label for="email" class="form-input">Email</label>
-                <input type="email" name="email" id="email" class="form-field">
-                <svg class="form-icon" width="18" height="24">
-                    <use href="./images/icons.svg#e-mail"></use>
-                </svg>
-            </div>
-            <div class="label-input">
-                <label for="comment" class="form-input">Comment</label>
-                <textarea name="comment" class="comment" id="comment" placeholder="Text input"></textarea>
-            </div>
-    <div class="checkbox-field">
-    <input
-        class="privacy-checkbox visually-hidden"
-        type="checkbox"
-        id="privacy"
-        name="privacy"
-        value="true">
 
-    <label class="privacy-label" for="privacy">
+      <div class="form-points">
 
-        <span class="custom-checkbox">
-            <svg class="checkbox-icon" width="10" height="8">
+        <div class="label-input">
+          <label for="name" class="form-input">Name</label>
+
+          <input
+            type="text"
+            name="username"
+            id="name"
+            class="form-field"
+          />
+
+          <svg class="form-icon" width="18" height="24">
+            <use href="./images/icons.svg#personal"></use>
+          </svg>
+        </div>
+
+        <div class="label-input">
+          <label for="telephone" class="form-input">Phone</label>
+
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            class="form-field"
+          />
+
+          <svg class="form-icon" width="18" height="24">
+            <use href="./images/icons.svg#tel"></use>
+          </svg>
+        </div>
+
+        <div class="label-input">
+          <label for="email" class="form-input">Email</label>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-field"
+          />
+
+          <svg class="form-icon" width="18" height="24">
+            <use href="./images/icons.svg#e-mail"></use>
+          </svg>
+        </div>
+
+        <div class="label-input">
+          <label for="comment" class="form-input">Comment</label>
+
+          <textarea
+            name="comment"
+            class="comment"
+            id="comment"
+            placeholder="Text input"
+          ></textarea>
+        </div>
+
+        <div class="checkbox-field">
+          <input
+            class="privacy-checkbox visually-hidden"
+            type="checkbox"
+            id="privacy"
+            name="privacy"
+            value="true"
+          />
+
+          <label class="privacy-label" for="privacy">
+
+            <span class="custom-checkbox">
+              <svg class="checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#check-mark"></use>
-            </svg>
-        </span>
+              </svg>
+            </span>
 
-        <span class="checkbox-description">
-            I accept the terms and conditions of the
-            <a class="privacy" href="">Privacy Policy</a>
-        </span>
+            <span class="checkbox-description">
+              I accept the terms and conditions of the
+              <a class="privacy" href="">Privacy Policy</a>
+            </span>
 
-        </label>
+          </label>
         </div>
+
         <div class="button-sec">
-            <button type="submit" class="button-send">Send</button>
+          <button type="submit" class="button-send">Send</button>
         </div>
-    </div>
+
+      </div>
+
     </form>
-    </div>
 </div>
 </body>
 </html>

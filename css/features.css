@@ -1,0 +1,137 @@
+.features {
+    padding: 96px 0;
+}
+
+.container-features {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    width: 100%;
+}
+
+.features-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.features-title3 {
+    margin: 0 0 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+}
+
+.features-p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #434455;
+}
+
+.features-image {
+    display: none;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (min-width: 768px) {
+    .features {
+        padding: 96px 0;
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .features-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .features-title3 {
+        text-align: left;
+    }
+
+    .features-p {
+        font-weight: 500;
+    }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media screen and (min-width: 1158px) {
+    .features {
+        padding: 120px 0;
+    }
+
+    .features-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .features-item {
+        width: 264px;
+    }
+
+    .features-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        background-color: #F4F4FD;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+    }
+
+    .features-title3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .features-p {
+        font-weight: 400;
+    }
+}
+
+
+/* =========================
+   FEATURES MAIN TITLE
+========================= */
+
+.features-title {
+    margin: 0 0 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+}

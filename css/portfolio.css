@@ -1,117 +1,170 @@
 .portfolio {
-  padding: 72px 0;
-  background-color: #ffffff;
+    background-color: #ffffff;
+    padding: 96px 0;
 }
 
 .container-portfolio {
-  width: 100%;
-  max-width: 428px;
-  margin: 0 auto;
-  padding: 0 16px;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .portfolio-title {
-  margin: 0 0 48px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
+    margin: 0 0 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
 }
 
 .portfolio-list {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.portfolio-items {
-  width: 100%;
-}
-
-.portfolio-cover {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-}
-
-.portfolio-cover picture {
-  display: block;
-  width: 100%;
-}
-
-.portfolio-cover img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.portfolio-content {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
-
-.portfolio-title3 {
-  margin: 0 0 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.portfolio-text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio {
-    padding: 96px 0;
-  }
-
-  .container-portfolio {
-    max-width: 768px;
-    padding: 0 16px;
-  }
-
-  .portfolio-title {
-    margin-bottom: 72px;
-  }
-
-  .portfolio-list {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-  }
-
-  .portfolio-items {
-    width: calc((100% - 24px) / 2);
-  }
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-@media screen and (min-width: 1158px) {
-  .portfolio {
-    padding: 120px 0;
-  }
-
-  .container-portfolio {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-
-  .portfolio-items {
+.portfolio-items {
     width: calc((100% - 48px) / 3);
-  }
+    background-color: #ffffff;
+}
+
+.portfolio-cover {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio-cover picture {
+    display: block;
+    width: 100%;
+}
+
+.portfolio-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.portfolio-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.portfolio-title3 {
+    margin: 0 0 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.portfolio-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media screen and (max-width: 767px) {
+    .portfolio {
+        padding: 72px 0;
+    }
+
+    .container-portfolio {
+        max-width: 428px;
+        padding: 0 16px;
+    }
+
+    .portfolio-title {
+        margin-bottom: 48px;
+    }
+
+    .portfolio-list {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .portfolio-items {
+        width: 100%;
+    }
+
+    .portfolio-content {
+        padding: 32px 16px;
+    }
+}
+
+
+/* ===== TABLET ===== */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .portfolio {
+        padding: 96px 0;
+    }
+
+    .container-portfolio {
+        max-width: 768px;
+        padding: 0 16px;
+    }
+
+    .portfolio-title {
+        margin-bottom: 72px;
+    }
+
+    .portfolio-list {
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .portfolio-items {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .portfolio-content {
+        padding: 32px 16px;
+    }
+}
+
+
+/* ===== DESKTOP ===== */
+
+@media screen and (min-width: 1158px) {
+    .portfolio {
+        padding: 120px 0;
+    }
+
+    .container-portfolio {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+
+    .portfolio-title {
+        margin-bottom: 72px;
+    }
+
+    .portfolio-list {
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .portfolio-items {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .portfolio-content {
+        padding: 32px 16px;
+    }
 }
